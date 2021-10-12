@@ -21,8 +21,6 @@ public class Solution41 {
 
     public List<String> scanNames() {
         // Create an arraylist of strings to hold each name.
-
-
         ArrayList<String> nameList = new ArrayList<>();
         // Create a file object and path the object to exercise41_input.txt in the data folder
         // Use a try-with-resources to ensure that all resources are closed

@@ -1,0 +1,12 @@
+@startuml
+
+class Solution41 {
+
+    'methods
+    +scanNames(): List<String>
+    +createNameListString(List<String>): StringBuilder
+    +uploadListToFile(StringBuilder):
+    -sortByLastName(List<String>):
+
+}
+@enduml
