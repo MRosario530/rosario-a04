@@ -1,0 +1,33 @@
+@startuml
+
+class Solution42 {
+    'methods
+    +main(String[]) {static}
+}
+
+class EmployeeGroup {
+    'attributes
+    -employeeList: List<Employee>
+    'methods
+    +readFileForEmployees(String)
+    +createEmployeesDataString(): StringBuilder
+}
+
+class EmployeeFileReader {
+    'methods
+    +readFileForEmployees(String): List<Employee>
+    -csvParser(String): String[]
+}
+
+class Employee {
+    'methods - I was unsure if you include a constructor but I chose to out of caution
+    +Employee(String,String,String)
+    +toString(): String
+}
+
+
+Solution42 -- EmployeeGroup
+EmployeeGroup --o EmployeeFileReader
+EmployeeGroup -- Employee
+EmployeeFileReader -- Employee
+@enduml
