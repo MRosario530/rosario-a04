@@ -1,12 +1,19 @@
 @startuml
 
 class Solution41 {
-
     'methods
-    +scanNames(): List<String>
-    +createNameListString(List<String>): StringBuilder
-    +uploadListToFile(StringBuilder):
-    -sortByLastName(List<String>):
-
+    +main(String[]) {static}
 }
+
+class NameSorter {
+    'attributes
+    -nameList: ArrayList<String>
+    'methods
+    +scanNames(String)
+    +createNameListString(): StringBuilder
+    +uploadListToFile(StringBuilder, String)
+    -sortByLastName()
+}
+
+Solution41 -- NameSorter
 @enduml
