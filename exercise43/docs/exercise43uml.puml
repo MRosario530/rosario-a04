@@ -1,0 +1,39 @@
+@startuml
+
+class Solution43 {
+    'methods
+    +main(String[]) {static}
+}
+
+class Website {
+    'attributes
+    -input: Scanner {static}
+    -startPath: String {static}
+    -websiteTitle: String
+    -author: String
+    -cssFolder: Boolean
+    -jsFolder: Boolean
+    'methods
+    +Website(): Website
+    +setWebsiteTitle(String)
+    +promptForWebsiteInfo()
+    +createWebsite()
+    -getYesOrNo(String): Boolean
+}
+
+class WebsiteFileCreator {
+    'methods
+    +createWebsiteFile(String, String, String)
+    -createFile(String, String)
+    -createWebsiteText(String, String): StringBuilder
+}
+
+class WebsiteDirectoryCreator {
+    'methods
+    +createWebsiteDirectory(String)
+}
+
+Solution43 -- Website
+Website --o WebsiteFileCreator
+Website --o WebsiteDirectoryCreator
+@enduml
