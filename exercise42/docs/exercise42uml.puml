@@ -21,7 +21,7 @@ class EmployeeFileReader {
 
 class Employee {
     'methods - I was unsure if you include a constructor but I chose to out of caution
-    +Employee(String,String,String)
+    +Employee(String,String,String): Employee
     +toString(): String
 }
 
