@@ -1,0 +1,36 @@
+@startuml
+
+class Solution44 {
+    'methods
+    +main(String[]) {static}
+}
+
+class ProductList {
+    'attributes
+    -products: List<Product>
+    'methods
+    +getProducts(): List<Product>
+    +searchProducts(String): String
+    +retrieveInventory(String)
+}
+
+class Product {
+    'attributes
+    -name: String
+    -price: double
+    -quantity: int
+    'methods
+    +Product(String, double, int): Product
+    +getName(): String
+    +toString(): String
+}
+
+class InventoryRetriever {
+    'methods
+    +retrieveInventory(String): List<Product>
+}
+
+Solution44 -- ProductList
+ProductList -- Product
+ProductList --o InventoryRetriever
+@enduml
