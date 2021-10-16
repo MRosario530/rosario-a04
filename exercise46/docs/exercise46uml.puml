@@ -1,0 +1,26 @@
+@startuml
+
+class Solution46 {
+    'methods
+    +main(String[]) {static}
+}
+
+class FrequencyFinder {
+    'attributes
+    -fileText: String
+    -wordCounts: Map<String,Integer>
+    'methods
+    +getFileText(): String
+    +retrieveFileText(String)
+    +createWordFrequencyHistogram(): String
+    -retrieveWordCounts()
+}
+
+class FileConverter {
+    'methods
+    +retrieveFileText(String): String
+}
+
+Solution46 -- FrequencyFinder
+FrequencyFinder --o FileConverter
+@enduml

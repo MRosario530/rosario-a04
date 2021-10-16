@@ -4,11 +4,22 @@
  */
 package baseline;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 public class FileConverter {
     public String retrieveFileText(String path) {
         // Create a string to hold the file text.
-        // Call the Files readString method with to the path with a try catch statement.
+        String stringFromFile = "";
+        // call the Files readString(path) with a try-catch statement.
+        try {
+            stringFromFile = Files.readString(Path.of(path));
+        } catch(IOException e) {
             // Print an error if no string could be assigned.
+            System.out.println("Error retrieving file input.");
+        }
         // Return the string.
+        return stringFromFile;
     }
 }
