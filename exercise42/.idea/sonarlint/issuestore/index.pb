@@ -9,3 +9,15 @@ X
 (src/test/java/baseline/EmployeeTest.java,c\3\c3546de9f939c5f3c21de71c416ecc2b612155c2
 b
 2src/test/java/baseline/EmployeeFileReaderTest.java,5\a\5a281fabf6dd0821ca7e33228253e656092bc20a
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+V
+&src/main/java/baseline/Solution42.java,c\f\cf2d704d5d2f3d0af870581692ca07d745f0c0d9
+Y
+)src/main/java/baseline/EmployeeGroup.java,8\3\83264b7b49e17ff571cb7abe1183e5ff0050e63e
+T
+$src/main/java/baseline/Employee.java,f\8\f8339893ec158378a2b94abb63a2a51cdd9a1d7c
+^
+.src/main/java/baseline/EmployeeFileReader.java,3\5\3536a076c6afb9781cbbcba91b9b7b2f959ad4b2
+G
+docs/exercise42uml.puml,d\3\d361ff101b0e4aef5f1a53e330c49a8e58902606
