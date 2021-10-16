@@ -7,12 +7,24 @@
 // a new file. It would not make sense to have 3 classes each with one method.
 package baseline;
 
+import java.util.Scanner;
+
 public class Solution45 {
+    private static final Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         // Create a WordReplacer object.
+        WordReplacer app = new WordReplacer();
         // Call retrieveInputFile(exercise45_input.txt).
-        // Prompt the user to enter a file name and store it to a string.
+        app.retrieveInputFile("data/exercise45_input.txt");
+        String fileName;
+        do {
+            // Prompt the user to enter a file name and store it to a string.
+            System.out.print("Please enter the name of the file you would like to output the result to (.txt will be" +
+                            " added automatically): ");
             // Ensure that the user's input is not blank - If so, prompt the user again.
+            fileName = input.nextLine();
+        } while(fileName.isBlank());
         // Call writeReplaceToFile("utilize", "use", file name).
+        app.writeReplaceToFile("utilize", "use", fileName);
     }
 }

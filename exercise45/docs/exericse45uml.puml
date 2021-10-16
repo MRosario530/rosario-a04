@@ -1,0 +1,20 @@
+@startuml
+
+class Solution45 {
+    'methods
+    +main(String[]) {static}
+
+}
+
+class WordReplacer {
+    'attributes
+    -inputFileText: String
+    'methods
+    +getInputFileText(): String
+    +retrieveInputFile(String)
+    +writeReplaceToFile(String, String, String)
+    -replaceWords(String, String): String
+}
+
+Solution45 -- WordReplacer
+@enduml
